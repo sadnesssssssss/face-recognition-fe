@@ -1,0 +1,21 @@
+.offers{
+  width:100vw;
+  text-align: center;
+  font-family: "Titillium Web";
+  font-size:64px;
+  font-weight: bold;
+}
+
+.offer-list{
+  display:flex;
+  justify-content: space-between;
+  padding-left:5vw;
+  padding-right:5vw;
+  font-size:24px;
+  font-weight: normal;
+}
+
+.what-we-can-offer{
+  justify-content: center;
+  width:20vw;
+}
