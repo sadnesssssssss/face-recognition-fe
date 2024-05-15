@@ -1,0 +1,191 @@
+.if-you-got {
+  margin: 0;
+}
+.value-container {
+  flex: 1;
+  position: relative;
+  font-size: 2.5em;
+  display: inline-block;
+  max-width: 100%;
+}
+.value-container-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 1.125em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.name {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web", serif;
+  font-size: 1.375em;
+  background-color: transparent;
+  height: 0.773em;
+  position: relative;
+  color: #555;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.usernameplaceholder {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 0.063em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.sendername {
+  align-self: stretch;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 2px solid #949494;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.125em 0.875em;
+  max-width: 100%;
+}
+.mail {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web", serif;
+  font-size: 1.375em;
+  background-color: transparent;
+  height: 100%;
+  position: relative;
+  color: #555;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.usernameplaceholder1 {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 0.063em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.problemmail {
+  align-self: stretch;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 2px solid #949494;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.125em 0.875em;
+  max-width: 100%;
+}
+.problemdescription {
+  border: 2px solid #949494;
+  background-color: #fff;
+  height: 15.455em;
+  width: auto;
+  outline: none;
+  align-self: stretch;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.955em 0.727em 1em;
+  font-family: "Titillium Web";
+  font-size: 1.375em;
+  color: #555;
+}
+.report-generator {
+  width: 34.375em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2.5em;
+  max-width: 100%;
+}
+.record-reader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0em 1.25em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.send-report {
+  width: 5.75em;
+  position: relative;
+  font-size: 2em;
+  line-height: 0.625em;
+  display: flex;
+  font-family: "Titillium Web";
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.sendreport {
+  cursor: pointer;
+  border: none;
+  padding: 1.25em;
+  background-color: #085171;
+  width: 31.25em;
+  border-radius: 3px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.sendreport:hover {
+  background-color: #2e7896;
+}
+.regular-expression-processor {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0em 1.25em 0em 1.875em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.bugreport {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 3.75em;
+  max-width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: "Titillium Web";
+  margin-bottom:300px;
+}

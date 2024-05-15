@@ -1,5 +1,5 @@
 .about-us{
-  font-family: "Titillium Web";
+  font-family: "Titillium Web", serif;
   width:100vw;
   background-color:#D2E9F9;
   padding-bottom:50px;
@@ -15,6 +15,7 @@
 .advantages{
   margin-top:5vw;
   margin-left:6vw;
+  margin-right:6vw;
   display:flex;
   gap:10vw;
   align-content: space-between;

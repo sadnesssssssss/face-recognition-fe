@@ -3,10 +3,10 @@
   width: 100%;
   position: absolute;
   margin: 0 !important;
-  top: 0em;
+  top: 0;
   right: -0.125em;
   bottom: -0.125em;
-  left: 0em;
+  left: 0;
   background-color: #f0f0f0;
   border: 1px solid #000;
   box-sizing: border-box;
@@ -16,7 +16,6 @@
   width: 2.781em;
   position: relative;
   object-fit: cover;
-  mix-blend-mode: linear-burn;
   flex-shrink: 0;
 }
 .identityx {
@@ -31,7 +30,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.45em 0em 0em;
+  padding: 0.45em 0 0;
 }
 .logo-1-parent {
   display: flex;
@@ -52,7 +51,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.106em 0em 0em;
+  padding: 0.106em 0 0;
 }
 .frame-child {
   height: 100%;
@@ -96,7 +95,7 @@
 }
 .header {
   align-self: stretch;
-  box-shadow: 0px 4px 16.4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -110,7 +109,7 @@
   max-width: 100%;
   text-align: left;
   color: #000;
-  font-family: "Titillium Web";
+  font-family: "Titillium Web", serif;
 }
 
 .button-link{
