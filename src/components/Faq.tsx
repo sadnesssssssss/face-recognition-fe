@@ -12,7 +12,7 @@ const Faq = () => {
                 <div className="pattern-parade">
                     <div className="calculate-cube1">
                         <img
-                            className="ouiarrow-up-icon1"
+                            className="ouiarrow-up-icon"
                             loading="lazy"
                             alt=""
                             src="/ouiarrowup.svg"
@@ -33,9 +33,9 @@ const Faq = () => {
                 <div className="tree-structure">
                     <div className="nested-loop">
                         <img
-                            className="ouiarrow-up-icon1"
+                            className="ouiarrow-up-icon"
                             alt=""
-                            src="/ouiarrowup-1.svg"
+                            src="/ouiarrowup.svg"
                         />
                         <div className="how-many-devices">
                             How many devices can I use at the same time in IdentityX?
@@ -59,9 +59,9 @@ const Faq = () => {
                     <div className="event-trigger">
                         <div className="error-handler1">
                             <img
-                                className="ouiarrow-up-icon1"
+                                className="ouiarrow-up-icon"
                                 alt=""
-                                src="/ouiarrowup-2.svg"
+                                src="/ouiarrowup.svg"
                             />
                             <div className="pattern-matcher">
                                 <div className="can-i-use">Can I use IdentityX for free?</div>
@@ -79,9 +79,9 @@ const Faq = () => {
                 <div className="time-manager">
                     <div className="space-partitioner">
                         <img
-                            className="ouiarrow-up-icon1"
+                            className="ouiarrow-up-icon"
                             alt=""
-                            src="/ouiarrowup-3.svg"
+                            src="/ouiarrowup.svg"
                         />
                         <div className="string-processor">
                             <div className="does-identityx-have">

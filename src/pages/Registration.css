@@ -1,0 +1,109 @@
+.logo-1-icon {
+  height: 55px;
+  width: 56.7px;
+  position: relative;
+  object-fit: cover;
+  mix-blend-mode: linear-burn;
+}
+.identityx {
+  position: relative;
+  font-size: 24px;
+  display: inline-block;
+  min-width: 96.6px;
+}
+.identityx-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 0px 0px;
+}
+.mainmenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+.mainmenu-wrapper {
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 1px 0px 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.dont-have-an {
+  flex: 1;
+  position: relative;
+  font-size: 20px;
+  line-height: 24.5px;
+}
+.signup {
+  width: 63px;
+  position: relative;
+  font-size: 20px;
+  text-decoration: underline;
+  line-height: 24.5px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 63px;
+  white-space: nowrap;
+}
+.sign-up {
+  width: 268px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.sign-up-wrapper {
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 0px 0px 8px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.registration {
+  width: 1500px;
+  height: 1080px;
+  background-color: #f9fcfc;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 20px 552px;
+  box-sizing: border-box;
+  gap: 26px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  font-family: "Titillium Web";
+}
+
+@media screen and (max-width: 450px) {
+  .identityx {
+    font-size: 19px;
+  }
+
+  .dont-have-an {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .signup {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

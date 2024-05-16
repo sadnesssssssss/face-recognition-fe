@@ -1,0 +1,185 @@
+.heading-1 {
+  width: 58.3px;
+  position: relative;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 58.3px;
+}
+.heading-1-sign-in-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 20px;
+}
+.username {
+  width: 138px;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web";
+  font-size: 22px;
+  background-color: transparent;
+  height: 17px;
+  position: relative;
+  color: #555;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.input {
+  align-self: stretch;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 2px solid #949494;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 18px 16px 19px;
+}
+.frame-div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.password {
+  width: 135px;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web";
+  font-size: 22px;
+  background-color: transparent;
+  height: 17px;
+  position: relative;
+  color: #555;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.input1 {
+  align-self: stretch;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 19px 16px 20px;
+}
+.checkboxes2-deselected1-en {
+  height: 35px;
+  width: 35px;
+  position: relative;
+  object-fit: cover;
+}
+.remember-me {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+}
+.remember-me-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5px 0px 0px;
+}
+.checkboxes2-deselected1-en-parent {
+  width: 203px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.log-in {
+  width: 94.7px;
+  position: relative;
+  font-size: 32px;
+  line-height: 20px;
+  display: flex;
+  font-family: "Titillium Web";
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  padding: 21px 20px;
+  background-color: #085171;
+  flex: 1;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.button:hover {
+  background-color: #2e7896;
+}
+.button-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 0px 0px 4px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.form {
+  width: 560px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6.1px);
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 27px 29px 20px 33px;
+  gap: 20px;
+  max-width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: "Titillium Web";
+}
+
+@media screen and (max-width: 450px) {
+  .username {
+    font-size: 18px;
+  }
+
+  .password {
+    font-size: 18px;
+  }
+
+  .form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
