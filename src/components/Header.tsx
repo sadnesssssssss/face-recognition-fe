@@ -1,4 +1,5 @@
 import { FunctionComponent, memo, useCallback } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header: FunctionComponent = memo(() => {
@@ -23,7 +24,7 @@ const Header: FunctionComponent = memo(() => {
   }, []);
 
   const onMyProfileTextClick = useCallback(() => {
-    // Please sync "Registration" to the project
+
   }, []);
 
   const onSubscriptionsTextClick = useCallback(() => {
@@ -54,7 +55,7 @@ const Header: FunctionComponent = memo(() => {
         </div>
       </div>
       <div className="buttons">
-        <b className="button-link" onClick={onTryItTextClick}>
+        <b className="button-link">
           Try it
         </b>
         <b className="button-link" onClick={onFAQTextClick}>
@@ -64,7 +65,9 @@ const Header: FunctionComponent = memo(() => {
           Support
         </b>
         <b className="button-link" onClick={onMyProfileTextClick}>
+        <Link className="button-link" to="/registration">
           My profile
+        </Link>
         </b>
         <div className="rectangle-parent">
           <div className="frame-child button-link" />

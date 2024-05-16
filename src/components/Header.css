@@ -112,6 +112,10 @@
   font-family: "Titillium Web", serif;
 }
 
-.button-link{
+.button-link a {
+  color:#000;
+  text-decoration: none;
+
   cursor: pointer;
 }
+
