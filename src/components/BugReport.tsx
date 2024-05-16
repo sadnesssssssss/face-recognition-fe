@@ -20,7 +20,7 @@ const BugReport = () => {
           </div>
           <div className="problemmail">
             <div className="usernameplaceholder1">
-              <input className="mail" placeholder="Mail" type="text" />
+              <input className="mail" placeholder="Mail" type="email" />
             </div>
           </div>
           <textarea
