@@ -1,0 +1,377 @@
+.got-any-questions {
+  width: 17.5em;
+  position: relative;
+  font-size: 2.5em;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.analyze-arena {
+  width: 73.125em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0em 1.25em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.ouiarrow-up-icon {
+  height: 3.75em;
+  width: 4em;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.what-is-face {
+  flex: 1;
+  position: relative;
+  font-size: 2.25em;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 8.472em;
+  max-width: 100%;
+}
+.calculate-cube1 {
+  width: 33.438em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.063em;
+  max-width: 100%;
+}
+.face-recognition-is {
+  height: 7.5em;
+  width: 34.531em;
+  position: relative;
+  font-size: 2em;
+  font-weight: 200;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.data-aggregator {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  text-align: left;
+}
+.pattern-parade {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 4.688em;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.decision-maker-icon {
+  height: 0.319em;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+}
+.input-splitter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 0.625em;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.ouiarrow-up-icon1 {
+  height: 4.25em;
+  width: 4.063em;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.how-many-devices {
+  flex: 1;
+  position: relative;
+  font-size: 2.25em;
+  line-height: 1.25em;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 17.611em;
+  max-width: 100%;
+}
+.nested-loop {
+  width: 65em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.with-a-premium {
+  margin: 0;
+}
+.blank-line {
+  margin: 0;
+}
+.users-with-a {
+  margin: 0;
+}
+.with-a-premium-container {
+  height: 8.5em;
+  width: 34.531em;
+  position: relative;
+  font-size: 2em;
+  font-weight: 200;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.record-set {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  text-align: left;
+}
+.tree-structure {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -2.506em;
+}
+.pattern-matcher-icon {
+  align-self: stretch;
+  height: 0.063em;
+  position: relative;
+  border-top: 1px solid #a7a5a5;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.ouiarrow-up-icon2 {
+  height: 3.806em;
+  width: 4.125em;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.can-i-use {
+  margin-left: -0.006em;
+  align-self: stretch;
+  position: relative;
+  font-size: 2.25em;
+  line-height: 1.156em;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.pattern-matcher {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 0em 0em;
+  box-sizing: border-box;
+  min-width: 20.375em;
+  max-width: 100%;
+}
+.error-handler1 {
+  width: 35.413em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.yes-identityx-offers {
+  width: 34.525em;
+  position: relative;
+  font-size: 2em;
+  font-weight: 200;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.data-merger {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  text-align: left;
+}
+.event-trigger {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  max-width: 100%;
+}
+.search-tree {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 4.981em;
+  box-sizing: border-box;
+  gap: 1.25em;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin-top: -2.506em;
+}
+.merge-mosaic-child {
+  align-self: stretch;
+  height: 0.313em;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-top: -2.506em;
+}
+.merge-mosaic {
+  align-self: stretch;
+  height: 61.475em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0em 0em 8.981em;
+  box-sizing: border-box;
+  max-width: 100%;
+  gap:5vh;
+  maegin-bottom:300px;
+}
+.ouiarrow-up-icon3 {
+  height: 3.813em;
+  width: 4.056em;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.does-identityx-have {
+  margin-left: -0.006em;
+  align-self: stretch;
+  position: relative;
+  font-size: 2.25em;
+  line-height: 1.158em;
+  font-weight: 600;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.string-processor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0em 0em 0em 0em;
+  box-sizing: border-box;
+  min-width: 31.688em;
+  max-width: 100%;
+}
+.space-partitioner {
+  width: 52.781em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  row-gap: 20px;
+}
+.day-money-back-guarantee {
+  text-decoration: underline;
+}
+.yes-identityx-has-container {
+  height: 1.906em;
+  width: 33.984em;
+  position: relative;
+  font-size: 2em;
+  font-weight: 200;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.set-operations {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  text-align: left;
+}
+.time-manager {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.graph-builder-child {
+  align-self: stretch;
+  height: 0.313em;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.graph-builder {
+  width: 74.444em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 1.275em;
+  max-width: 100%;
+}
+.faq1 {
+  width: 75.625em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10vh;
+  max-width: 100%;
+}
+.sorting-sanctuary {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0em 1.25em 7.188em;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: "Titillium Web";
+  margin-bottom:500px;
+}

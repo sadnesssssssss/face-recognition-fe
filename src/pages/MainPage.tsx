@@ -5,6 +5,7 @@ import Offers from "../components/Offers";
 import Subscriptions from "../components/Subscriptions";
 import BugReport from "../components/BugReport";
 import Footer from "../components/Footer"
+import Faq from "../components/Faq"
 import "./MainPage.css";
 
 const MainPage: FunctionComponent = () => {
@@ -14,6 +15,7 @@ const MainPage: FunctionComponent = () => {
         <AboutUs/>
         <Offers/>
         <Subscriptions/>
+        <Faq/>
         <BugReport/>
         <Footer/>
     </div>
