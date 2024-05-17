@@ -1,6 +1,6 @@
 import {useCallback} from "react";
 import {Link, useNavigate} from "react-router-dom";
-import SignUpForm from "../components/SignUpForm";
+import SignUpForm from "../../components/SignUp/SignUpForm";
 
 const SignUp = () => {
     const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import {Link, useNavigate} from "react-router-dom";
-import LogInForm from "../components/LogInForm";
+import LogInForm from "../../components/LogIn/LogInForm";
 import "./LogIn.css";
 
 const LogIn = () => {
