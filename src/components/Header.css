@@ -74,7 +74,6 @@
   margin-top:20px;
 }
 .buttons {
-  margin-top:-5px;
   display:flex;
   height: 1.938em;
   width: 76.125em;
@@ -95,6 +94,7 @@
 }
 .header {
   align-self: stretch;
+  vertical-align: middle;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
@@ -112,6 +112,12 @@
   font-family: "Titillium Web", serif;
 }
 
+.button-link a {
+  color:#000;
+  text-decoration: none;
+}
+
 .button-link{
   cursor: pointer;
 }
+

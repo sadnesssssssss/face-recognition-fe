@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import MainPage from "./pages/MainPage";
+import Registration from "./pages/Registration"
 
 function App() {
   const action = useNavigationType();
@@ -46,6 +47,7 @@ function App() {
   return (
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/registration" element={<Registration/>}/>
       </Routes>
   );
 }
