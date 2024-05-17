@@ -46,7 +46,7 @@ const Header: FunctionComponent = memo(() => {
               className="logo-1-icon"
               loading="lazy"
               alt=""
-              src="/logo-1@2x.png"
+              src="/logo-1@2x.ico"
             />
             <div className="error-handler">
               <b className="identityx">IdentityX</b>
