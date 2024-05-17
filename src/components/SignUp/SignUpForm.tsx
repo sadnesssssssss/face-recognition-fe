@@ -12,6 +12,7 @@ const LogInForm = () => {
     const [fadeOut, setFadeOut] = useState(false);
     const [placeholder, setPlaceholder] = useState("E-mail")
     const [instr, setInstr] = useState("Enter your E-mail:")
+    const [errorText, setErrorText] = useState("")
 
 
     const onButtonClick = () => {
@@ -43,6 +44,7 @@ const LogInForm = () => {
                 </div>
                 <div className="needed-action">{instr}</div>
                 <input className="password" placeholder={placeholder}/>
+                {errorText != ""? <p className="error">{errorText}</p> : ""}
                 <div className="button-wrapper">
                     <button className="button" onClick={() => onButtonClick()}>
                         <b className="log-in"> &gt;&gt; </b>

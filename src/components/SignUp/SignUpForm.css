@@ -201,7 +201,7 @@
 }
 
 @keyframes fade-out {
-  25% {
+  50% {
     opacity: 1;
   }
   100% {
