@@ -18,7 +18,7 @@ const Subscriptions = () => {
     return (
         <div className="subscriptions1" data-scroll-to="subscriptionsContainer">
             <div className="wrapper-background">
-                <img className="background-icon" alt="" src="/background@2x.png"/>
+                <img className="background-icon" alt="" src="/images/subscriptions_background.png"/>
             </div>
             <div className="subdecription-text">
                 <p className="top-text">Protect your business<br></br></p>

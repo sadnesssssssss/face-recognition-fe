@@ -10,7 +10,7 @@ const AboutUs = () => {
                     className="parallel-icon"
                     loading="lazy"
                     alt=""
-                    src="/vector.svg"
+                    src="/icons/people.svg"
                 />
                     <p>Our team is specializing in the development and implementation of facial recognition technologies.</p>
                 </div>
@@ -19,7 +19,7 @@ const AboutUs = () => {
                     className="carbonmachine-learning-model-icon"
                     loading="lazy"
                     alt=""
-                    src="/carbonmachinelearningmodel.svg"
+                    src="/icons/machinelearningmodel.svg"
                 />
                     <p>Our goal is to make the world a safer and more convenient place by providing innovative solutions for personal identification.</p>
                 </div>
@@ -28,7 +28,7 @@ const AboutUs = () => {
                     className="phtrend-up-icon"
                     loading="lazy"
                     alt=""
-                    src="/phtrendup.svg"
+                    src="/icons/trendup.svg"
                 />
                     <p>Our expertise allows us to develop products that accurately and quickly recognize faces in a variety of environments</p>
                 </div>

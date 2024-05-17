@@ -21,7 +21,7 @@ const LogIn = () => {
             className="logo-1-icon"
             loading="lazy"
             alt=""
-            src="/logo-1@2x.ico"
+            src="/icons/logo.ico"
           />
           <div className="identityx-wrapper">
             <b className="identityx">IdentityX</b>

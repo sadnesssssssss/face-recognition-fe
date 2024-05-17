@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="follow-us-parent">
           <b className="follow-us">Follow us</b>
           <div className="frame-container">
-            <img className="group-icon" alt="" src="/group-9.svg" />
+            <img className="group-icon" alt="" src="/icons/contact-icons.svg" />
           </div>
         </div>
       </div>

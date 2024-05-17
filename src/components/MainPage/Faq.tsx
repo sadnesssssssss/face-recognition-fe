@@ -15,7 +15,7 @@ const Faq = () => {
                             className="ouiarrow-up-icon"
                             loading="lazy"
                             alt=""
-                            src="/ouiarrowup.svg"
+                            src="/icons/arrowup.svg"
                         />
                         <div className="what-is-face">What is Face Recognition?</div>
                     </div>
@@ -35,7 +35,7 @@ const Faq = () => {
                         <img
                             className="ouiarrow-up-icon"
                             alt=""
-                            src="/ouiarrowup.svg"
+                            src="/icons/arrowup.svg"
                         />
                         <div className="how-many-devices">
                             How many devices can I use at the same time in IdentityX?
@@ -61,7 +61,7 @@ const Faq = () => {
                             <img
                                 className="ouiarrow-up-icon"
                                 alt=""
-                                src="/ouiarrowup.svg"
+                                src="/icons/arrowup.svg"
                             />
                             <div className="pattern-matcher">
                                 <div className="can-i-use">Can I use IdentityX for free?</div>
@@ -81,7 +81,7 @@ const Faq = () => {
                         <img
                             className="ouiarrow-up-icon"
                             alt=""
-                            src="/ouiarrowup.svg"
+                            src="/icons/arrowup.svg"
                         />
                         <div className="string-processor">
                             <div className="does-identityx-have">
