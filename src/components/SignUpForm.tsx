@@ -1,7 +1,8 @@
 import { FunctionComponent, memo, useCallback } from "react";
-import "./Form.css";
+import "./LogInForm.css";
 
-const Form: FunctionComponent = memo(() => {
+const LogInForm: FunctionComponent = memo(() => {
+
   const onButtonClick = useCallback(() => {
     // Please sync "UserProfile" to the project
   }, []);
@@ -10,7 +11,7 @@ const Form: FunctionComponent = memo(() => {
     <div className="form">
       <div className="frame-div">
         <div className="heading-1-sign-in-wrapper">
-          <div className="heading-1">Sign In</div>
+          <div className="heading-1">Sign Up</div>
         </div>
           <input className="username" placeholder="Username" type="text" />
           <input className="password" placeholder="Password" type="text" />
@@ -20,11 +21,11 @@ const Form: FunctionComponent = memo(() => {
       </div>
       <div className="button-wrapper">
         <button className="button" onClick={onButtonClick}>
-          <b className="log-in">Log In</b>
+          <b className="log-in"> &gt;&gt; </b>
         </button>
       </div>
     </div>
   );
 });
 
-export default Form;
+export default LogInForm;

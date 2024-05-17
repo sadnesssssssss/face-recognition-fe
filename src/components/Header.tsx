@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header: FunctionComponent = memo(() => {
   const onTryItTextClick = useCallback(() => {
-    // Please sync "Registration" to the project
+    // Please sync "LogIn" to the project
   }, []);
 
   const onFAQTextClick = useCallback(() => {
@@ -46,7 +46,7 @@ const Header: FunctionComponent = memo(() => {
               className="logo-1-icon"
               loading="lazy"
               alt=""
-              src="/logo-1@2x.png"
+              src="/logo-1@2x.ico"
             />
             <div className="error-handler">
               <b className="identityx">IdentityX</b>
@@ -65,7 +65,7 @@ const Header: FunctionComponent = memo(() => {
           Support
         </b>
         <b className="button-link" onClick={onMyProfileTextClick}>
-        <Link className="button-link" to="/registration">
+        <Link className="button-link" to="/login">
           My profile
         </Link>
         </b>
