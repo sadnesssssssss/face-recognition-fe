@@ -1,5 +1,5 @@
 import { FunctionComponent, memo, useCallback } from "react";
-import "./LogInForm.css";
+import "../LogIn/LogInForm.css";
 
 const LogInForm: FunctionComponent = memo(() => {
 
