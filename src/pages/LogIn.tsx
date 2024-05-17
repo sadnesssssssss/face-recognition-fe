@@ -1,9 +1,9 @@
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
-import Form from "../components/Form";
-import "./Registration.css";
+import {Link, useNavigate} from "react-router-dom";
+import LogInForm from "../components/LogInForm";
+import "./LogIn.css";
 
-const Registration = () => {
+const LogIn = () => {
   const navigate = useNavigate();
   const onMainMenuContainerClick = useCallback(() => {
     navigate("/");
@@ -28,15 +28,15 @@ const Registration = () => {
           </div>
         </div>
       </div>
-      <Form />
+      <LogInForm/>
       <div className="sign-up-wrapper">
         <div className="sign-up" onClick={onSignUpContainerClick}>
-          <div className="dont-have-an">Don't have an account?</div>
-          <div className="signup">Sign up</div>
+          <div className="dont-have-an">Don't have an account? &nbsp;</div>
+            <Link to="../signup" className="signup"><div className="signup">Sign up</div></Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Registration;
+export default LogIn;

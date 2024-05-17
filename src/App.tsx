@@ -6,7 +6,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import MainPage from "./pages/MainPage";
-import Registration from "./pages/Registration"
+import LogIn from "./pages/LogIn"
+import SignUp from "./pages/SignUp"
 
 function App() {
   const action = useNavigationType();
@@ -47,7 +48,8 @@ function App() {
   return (
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/registration" element={<Registration/>}/>
+        <Route path="/login" element={<LogIn/>}/>
+        <Route path="/signup" element={<SignUp/>}/>
       </Routes>
   );
 }
