@@ -12,18 +12,11 @@ const Form: FunctionComponent = memo(() => {
         <div className="heading-1-sign-in-wrapper">
           <div className="heading-1">Sign In</div>
         </div>
-        <div className="input">
           <input className="username" placeholder="Username" type="text" />
-        </div>
-      </div>
-      <div className="input1">
-        <input className="password" placeholder="Password" type="text" />
+          <input className="password" placeholder="Password" type="text" />
       </div>
       <div className="checkboxes2-deselected1-en-parent">
-          <input type="checkbox"></input>
-        <div className="remember-me-wrapper">
-          <div className="remember-me">Remember me</div>
-        </div>
+          <label><input className="remember-checkbox" type="checkbox"></input>Remember me</label>
       </div>
       <div className="button-wrapper">
         <button className="button" onClick={onButtonClick}>
