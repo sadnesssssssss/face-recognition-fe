@@ -14,27 +14,27 @@ const Header: FunctionComponent = memo(() => {
     }
   }, []);
 
-  const onSupportTextClick = useCallback(() => {
+  const onSupportTextClick = () => {
     const anchor = document.querySelector(
       "[data-scroll-to='bugReportContainer']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-  }, []);
+  };
 
   const onMyProfileTextClick = useCallback(() => {
 
   }, []);
 
-  const onSubscriptionsTextClick = useCallback(() => {
+  const onSubscriptionsTextClick = () => {
     const anchor = document.querySelector(
       "[data-scroll-to='subscriptionsContainer']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-  }, []);
+  };
 
   return (
     <header className="header">
