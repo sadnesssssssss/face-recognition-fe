@@ -1,18 +1,15 @@
-import { FunctionComponent, memo, useCallback } from "react";
+import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header: FunctionComponent = memo(() => {
-  const onTryItTextClick = useCallback(() => {
-    // Please sync "LogIn" to the project
-  }, []);
+const Header: FunctionComponent = () => {
 
-  const onFAQTextClick = useCallback(() => {
+  const onFAQTextClick = () => {
     const anchor = document.querySelector("[data-scroll-to='faqContainer']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-  }, []);
+  };
 
   const onSupportTextClick = () => {
     const anchor = document.querySelector(
@@ -22,10 +19,6 @@ const Header: FunctionComponent = memo(() => {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
   };
-
-  const onMyProfileTextClick = useCallback(() => {
-
-  }, []);
 
   const onSubscriptionsTextClick = () => {
     const anchor = document.querySelector(
@@ -64,7 +57,7 @@ const Header: FunctionComponent = memo(() => {
         <b className="button-link" onClick={onSupportTextClick}>
           Support
         </b>
-        <b className="button-link" onClick={onMyProfileTextClick}>
+        <b className="button-link">
         <Link className="button-link" to="/login">
           My profile
         </Link>
@@ -78,6 +71,6 @@ const Header: FunctionComponent = memo(() => {
       </div>
     </header>
   );
-});
+};
 
 export default Header;

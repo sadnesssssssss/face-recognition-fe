@@ -1,10 +1,9 @@
-import {FunctionComponent, memo, useCallback} from "react";
 import axios from 'axios'
 import {GoogleLogin} from '@react-oauth/google';
 import {jwtDecode} from 'jwt-decode'
 import "./LogInForm.css";
 
-const LogInForm: FunctionComponent = () => {
+const LogInForm = () => {
     const onButtonClick = () => {
         const apiUrl = 'http://localhost:8000/api/user/get_base_resp/';
         axios.get(apiUrl, {
