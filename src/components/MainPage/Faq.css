@@ -31,9 +31,10 @@
   display: inline-block;
   min-width: 8.472em;
   max-width: 100%;
+  padding-left: 1.1em;
 }
 .calculate-cube1 {
-  width: 33.438em;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,6 +42,7 @@
   justify-content: flex-start;
   gap: 0.063em;
   max-width: 100%;
+  text-align: left;
 }
 .face-recognition-is {
   height: 7.5em;
@@ -51,6 +53,16 @@
   display: inline-block;
   flex-shrink: 0;
   max-width: 100%;
+}
+.data-aggregator-p {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  text-align: left;
+  padding-left: 6.6em;
 }
 .data-aggregator {
   align-self: stretch;
@@ -67,9 +79,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0em 0em 4.688em;
+  padding: 0em 0em 1em;
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 1170px;
   flex-shrink: 0;
 }
 .decision-maker-icon {
@@ -96,6 +108,7 @@
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  padding-right: 2em;
 }
 .how-many-devices {
   flex: 1;
@@ -127,7 +140,6 @@
   margin: 0;
 }
 .with-a-premium-container {
-  height: 8.5em;
   width: 34.531em;
   position: relative;
   font-size: 2em;
@@ -154,6 +166,7 @@
   max-width: 100%;
   flex-shrink: 0;
   margin-top: -2.506em;
+  padding: 0em 0em 3em;
 }
 .pattern-matcher-icon {
   align-self: stretch;
@@ -254,16 +267,24 @@
 }
 .merge-mosaic {
   align-self: stretch;
-  height: 61.475em;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-start;
-  padding: 0em 0em 8.981em;
+  justify-content: stretch;
   box-sizing: border-box;
   max-width: 100%;
   gap:5vh;
-  maegin-bottom:300px;
+}
+.button-faq {
+  background-color: #f9fcfc;
+  border: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 0px 0;
 }
 .ouiarrow-up-icon3 {
   height: 3.813em;
@@ -353,7 +374,6 @@
   max-width: 100%;
 }
 .faq1 {
-  width: 75.625em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -373,5 +393,4 @@
   text-align: center;
   color: #000;
   font-family: "Titillium Web";
-  margin-bottom:500px;
 }
