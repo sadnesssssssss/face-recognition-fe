@@ -25,7 +25,7 @@ const Faq = () => {
                     })}>
                         <div className="calculate-cube1">
                             <img
-                                className={"ouiarrow-up-icon"}
+                                className="ouiarrow-up-icon"
                                 loading="lazy"
                                 alt=""
                                 src="/icons/arrowup.svg"

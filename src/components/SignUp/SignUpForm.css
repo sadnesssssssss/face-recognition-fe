@@ -121,10 +121,11 @@
   flex-shrink: 0;
 }
 .button {
+  width:100%;
   cursor: pointer;
   border: none;
   padding: 21px 20px;
-  background-color: #085171;
+  background-color: #4285F4;
   flex: 1;
   border-radius: 3px;
   overflow: hidden;
@@ -142,12 +143,12 @@
 .button-wrapper {
   align-self: stretch;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0px 0px 0px 4px;
   box-sizing: border-box;
-  max-width: 100%;
+  width:100%;
 }
 .form {
   width: 560px;
