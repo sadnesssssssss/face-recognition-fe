@@ -1,40 +1,33 @@
-import { FunctionComponent, memo, useCallback } from "react";
+import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-const Header: FunctionComponent = memo(() => {
-  const onTryItTextClick = useCallback(() => {
-    // Please sync "LogIn" to the project
-  }, []);
+const Header: FunctionComponent = () => {
 
-  const onFAQTextClick = useCallback(() => {
+  const onFAQTextClick = () => {
     const anchor = document.querySelector("[data-scroll-to='faqContainer']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-  }, []);
+  };
 
-  const onSupportTextClick = useCallback(() => {
+  const onSupportTextClick = () => {
     const anchor = document.querySelector(
       "[data-scroll-to='bugReportContainer']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-  }, []);
+  };
 
-  const onMyProfileTextClick = useCallback(() => {
-
-  }, []);
-
-  const onSubscriptionsTextClick = useCallback(() => {
+  const onSubscriptionsTextClick = () => {
     const anchor = document.querySelector(
       "[data-scroll-to='subscriptionsContainer']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
     }
-  }, []);
+  };
 
   return (
     <header className="header">
@@ -46,7 +39,7 @@ const Header: FunctionComponent = memo(() => {
               className="logo-1-icon"
               loading="lazy"
               alt=""
-              src="/logo-1@2x.ico"
+              src="/icons/logo.ico"
             />
             <div className="error-handler">
               <b className="identityx">IdentityX</b>
@@ -64,7 +57,7 @@ const Header: FunctionComponent = memo(() => {
         <b className="button-link" onClick={onSupportTextClick}>
           Support
         </b>
-        <b className="button-link" onClick={onMyProfileTextClick}>
+        <b className="button-link">
         <Link className="button-link" to="/login">
           My profile
         </Link>
@@ -78,6 +71,6 @@ const Header: FunctionComponent = memo(() => {
       </div>
     </header>
   );
-});
+};
 
 export default Header;

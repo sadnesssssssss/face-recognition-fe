@@ -1,177 +1,205 @@
+.analogy {
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
 .heading-1 {
-  width: 60px;
-  position: relative;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  min-width: 60px;
+    width: 60px;
+    position: relative;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 60px;
 }
+
 .heading-1-sign-in-wrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0px 20px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 20px;
 }
+
 .username {
-  width: 100%;
-  border: 1px solid #000;
-  padding: 20px 0 20px 10px;
-  border-radius: 10px;
-  font-family: "Titillium Web", serif;
-  font-size: 22px;
-  background-color: transparent;
-  height: 17px;
-  position: relative;
-  color: #555;
-  text-align: left;
-  display: flex;
-  align-items: center;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 20px 0 20px 10px;
+    border-radius: 10px;
+    font-family: "Titillium Web", serif;
+    font-size: 22px;
+    background-color: transparent;
+    height: 17px;
+    position: relative;
+    color: #555;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
+
 .input {
-  align-self: stretch;
-  border-radius: 3px;
-  background-color: #fff;
-  border: 2px solid #949494;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 18px 16px 19px;
+    align-self: stretch;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 2px solid #949494;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 18px 16px 19px;
 }
+
 .frame-div {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 15px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 15px;
 }
+
 .password {
-  width: 100%;
-  border: 1px solid #000;
-  padding: 20px 0 20px 10px;
-  border-radius: 10px;
-  font-family: "Titillium Web", serif;
-  font-size: 22px;
-  background-color: transparent;
-  height: 17px;
-  position: relative;
-  color: #555;
-  text-align: left;
-  display: flex;
-  align-items: center;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 20px 0 20px 10px;
+    border-radius: 10px;
+    font-family: "Titillium Web", serif;
+    font-size: 22px;
+    background-color: transparent;
+    height: 17px;
+    position: relative;
+    color: #555;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
+
 .input1 {
-  align-self: stretch;
-  border-radius: 3px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 19px 16px 20px;
+    align-self: stretch;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 19px 16px 20px;
 }
+
 .checkboxes2-deselected1-en {
-  height: 35px;
-  width: 35px;
-  position: relative;
-  object-fit: cover;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    object-fit: cover;
 }
+
 .remember-me {
-  align-self: stretch;
-  position: relative;
-  font-size: 18px;
-  line-height: 24px;
+    align-self: stretch;
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
 }
+
 .remember-me-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 5px 0px 0px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0px 0px;
 }
+
 .checkboxes2-deselected1-en-parent {
-  width: 203px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  vertical-align: middle;
+    width: 203px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    vertical-align: middle;
 }
+
 .log-in {
-  width: 95px;
-  position: relative;
-  font-size: 32px;
-  line-height: 20px;
-  display: flex;
-  font-family: "Titillium Web";
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+    width: 95px;
+    position: relative;
+    font-size: 32px;
+    line-height: 20px;
+    display: flex;
+    font-family: "Titillium Web";
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
+
 .button {
-  cursor: pointer;
-  border: none;
-  padding: 21px 20px;
-  background-color: #085171;
-  flex: 1;
-  border-radius: 3px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  max-width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 21px 20px;
+    background-color: #4285F4;
+    flex: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    max-width: 100%;
 }
+
 .button:hover {
-  background-color: #2e7896;
+    background-color: #2e7896;
 }
+
 .button-wrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0px 0px 0px 4px;
-  box-sizing: border-box;
-  max-width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 4px;
+    box-sizing: border-box;
+    max-width: 100%;
 }
+
 .form {
-  width: 560px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(6.1px);
-  border-radius: 10px;
-  background-color: #fff;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 27px 29px 20px 33px;
-  gap: 20px;
-  max-width: 100%;
-  text-align: center;
-  color: #000;
-  font-family: "Titillium Web";
+    width: 560px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6.1px);
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 27px 29px 20px 33px;
+    gap: 20px;
+    max-width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: "Titillium Web";
 }
 
 
-.remember-checkbox{
-  width:20px;
-  height:20px;
-  vertical-align: middle;
+.remember-checkbox {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+.google-button {
+    align-self: center;
+    align-items:center;
+    justify-items: center;
+    justify-content: center;
 }
