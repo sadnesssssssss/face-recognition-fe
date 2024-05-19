@@ -3,25 +3,17 @@ import "./BugReport.css";
 const BugReport = () => {
   return (
     <div className="bugreport" data-scroll-to="bugReportContainer">
-      <div className="value-container-wrapper">
-        <b className="value-container">
-          <p className="if-you-got">
+          <p className="title-text">
             If You got any troubles using our app, You can contact our support
             via this form:
           </p>
-        </b>
-      </div>
-      <div className="record-reader">
+      <div className="report">
         <div className="report-generator">
           <div className="sender-name">
-            <div className="username-placeholder">
               <input className="name" placeholder="Name" type="text" />
-            </div>
           </div>
           <div className="problem-mail">
-            <div className="username-placeholder1">
               <input className="mail" placeholder="Mail" type="email" />
-            </div>
           </div>
           <textarea
             className="problem-description"
@@ -31,7 +23,7 @@ const BugReport = () => {
           />
         </div>
       </div>
-      <div className="regular-expression-processor">
+      <div className="send-report-div">
         <button className="send-report-button">
           <b className="send-report">Send report</b>
         </button>
