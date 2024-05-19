@@ -2,22 +2,52 @@ import axios from 'axios'
 import {GoogleLogin} from '@react-oauth/google';
 import {jwtDecode} from 'jwt-decode'
 import "./LogInForm.css";
+import {useNavigate} from "react-router-dom";
+import {useCookies} from "react-cookie"
 
 const LogInForm = () => {
+
+
+    const [cookies, setCookie] = useCookies(["token"])
+    const navigator=useNavigate();
     const onButtonClick = () => {
-        const apiUrl = 'http://localhost:8000/api/user/get_base_resp/';
-        axios.get(apiUrl, {
-            responseType: "json"
-        }).then((resp: any) => {
-            const allPersons = resp.data;
-            console.log(allPersons);
-        });
+        // axios.get(apiUrl, {
+        //     responseType: "json"
+        // }).then((resp: any) => {
+        //     const allPersons = resp.data;
+        //     console.log(allPersons);
+        // });
     };
 
+    interface IJWTPayload {
+        name: string,
+        email: string
+        picture: string
+    }
 
-    const responseMessage = (response: any) => {
+
+
+    const handleGoogleAuth = (response: any) => {
         console.log(response)
-        console.log(jwtDecode(response.credential));
+        var credential = jwtDecode(response.credential) as IJWTPayload;
+        console.log(credential);
+        console.log(credential.name);
+        console.log(credential.email);
+        axios.post("http://localhost:8000/api/user/googlecreate/", {
+            "name": credential.name,
+            "email": credential.email,
+        }).then((res) => {
+            console.log(res);
+        })
+        axios.post("http://localhost:8000/api/user/googletoken/", {
+            "name": credential.name,
+            "email": credential.email,
+        }).then((res) => {
+            console.log(res);
+            setCookie("token", res.data.token);
+            navigator("../profile");
+        })
+
     };
     const errorMessage = () => {
         console.log("error");
@@ -40,7 +70,7 @@ const LogInForm = () => {
             </button>
             <p className="analogy">Or</p>
             <div className="google-button">
-                <GoogleLogin onSuccess={responseMessage} onError={errorMessage}/>
+                <GoogleLogin onSuccess={handleGoogleAuth} onError={errorMessage}/>
             </div>
         </div>
 
