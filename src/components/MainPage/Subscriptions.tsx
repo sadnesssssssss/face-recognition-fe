@@ -20,20 +20,20 @@ const Subscriptions = () => {
             <div className="wrapper-background">
                 <img className="background-icon" alt="" src="/images/subscriptions_background.png"/>
             </div>
-            <div className="subdecription-text">
+            <div className="sub-description-text">
                 <p className="top-text">Protect your business<br></br></p>
                 <p className="guarantee"><strong>Pricing Guarantee:</strong>Your plan always renews with the same price
                     and duration<br></br></p>
                 <p className="plan-selection">Select your subscription plan:</p>
             </div>
-            <div className="subsription-buttons">
+            <div className="subscription-buttons">
                 <div className="subscription left-button">
                     <p className="sub-name"><b>Trial</b></p>
                     <p className="sub-price">Free for <b>1 Week</b></p>
                     <Link to="/buy" className="link-text"><p className="select-button">Select Plan</p></Link>
                 </div>
                 <div className="subscription middle-button">
-                    <p className="bestdeal">Best Deal</p>
+                    <p className="best-deal">Best Deal</p>
                     <p className="sub-name"><b>1 Year</b></p>
                     <p className="sub-price top-price"><b>$3.49</b></p>
                     <p className="sub-price bot-price">/month</p>

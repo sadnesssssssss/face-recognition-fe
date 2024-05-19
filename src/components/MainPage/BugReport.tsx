@@ -13,18 +13,18 @@ const BugReport = () => {
       </div>
       <div className="record-reader">
         <div className="report-generator">
-          <div className="sendername">
-            <div className="usernameplaceholder">
+          <div className="sender-name">
+            <div className="username-placeholder">
               <input className="name" placeholder="Name" type="text" />
             </div>
           </div>
-          <div className="problemmail">
-            <div className="usernameplaceholder1">
+          <div className="problem-mail">
+            <div className="username-placeholder1">
               <input className="mail" placeholder="Mail" type="email" />
             </div>
           </div>
           <textarea
-            className="problemdescription"
+            className="problem-description"
             placeholder="Describe your problem..."
             rows={17}
             cols={28}
@@ -32,7 +32,7 @@ const BugReport = () => {
         </div>
       </div>
       <div className="regular-expression-processor">
-        <button className="sendreport">
+        <button className="send-report-button">
           <b className="send-report">Send report</b>
         </button>
       </div>

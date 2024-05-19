@@ -7,7 +7,6 @@ const AboutUs = () => {
             <div className="advantages">
                 <div className="offer">
                 <img
-                    className="parallel-icon"
                     loading="lazy"
                     alt=""
                     src="/icons/people.svg"
@@ -16,7 +15,6 @@ const AboutUs = () => {
                 </div>
                 <div className="offer">
                 <img
-                    className="carbonmachine-learning-model-icon"
                     loading="lazy"
                     alt=""
                     src="/icons/machinelearningmodel.svg"
@@ -25,7 +23,6 @@ const AboutUs = () => {
                 </div>
                 <div className="offer">
                 <img
-                    className="phtrend-up-icon"
                     loading="lazy"
                     alt=""
                     src="/icons/trendup.svg"
