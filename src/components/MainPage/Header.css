@@ -26,7 +26,7 @@
   display: inline-block;
   flex-shrink: 0
 }
-.error-handler {
+.project-name {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -48,6 +48,7 @@
   z-index: 1;
 }
 .logo-wrapper {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,8 +60,13 @@
   width: 60%;
   position: absolute;
   border-radius: 15px;
-  background-color: #242424;
+  background-color: #000000;
 }
+
+.frame-child:hover{
+  background-color:#232323;
+}
+
 .rectangle-parent {
   width: 13.313em;
   margin-left:20px;
@@ -90,9 +96,17 @@
 }
 
 .subscriptions{
+  background-color:#000;
   z-index:2;
   font-size:24px;
+  padding: 0 40px 0 40px;
+  border-radius: 20px;
 }
+
+.subscriptions:hover{
+  background-color:#232323;
+}
+
 .header {
   align-self: stretch;
   vertical-align: middle;

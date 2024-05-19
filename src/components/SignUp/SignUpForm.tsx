@@ -1,6 +1,6 @@
 import {FunctionComponent, memo, useCallback, useState} from "react";
 import {useNavigate} from 'react-router-dom';
-import "../SignUp/SignUpForm.css";
+import "../LogIn/LogInForm.css";
 
 const LogInForm = () => {
 

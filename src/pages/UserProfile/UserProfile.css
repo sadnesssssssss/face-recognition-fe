@@ -1,0 +1,57 @@
+.user-data{
+    margin-top:100px;
+    font-family: "Titillium Web", serif;
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    justify-content: space-between;
+    padding-left:10%;
+    padding-right:10%;
+    font-size:24px;
+    max-height: 300px;
+    height:300px;
+}
+
+.user-image-wrapper{
+    width:25%;
+    height:300px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    justify-content: space-between;
+    height:300px;
+}
+
+.copy-key{
+    color:#fff;
+    background-color:#000;
+    border-radius: 7px;
+    box-shadow: 0 3px 5px#4b4b4b;
+}
+
+.user-profile-button{
+    color:#fff;
+    background-color:#000;
+    border-radius: 7px;
+    box-shadow: 0 3px 5px#4b4b4b;
+}
+
+.user-profile-button:hover{
+    background-color:#232323;
+}
+
+
+.user-sub-data{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    justify-content: space-between;
+    height:300px;
+}
+
+.user-info-name{
+    font-size:36px;
+}

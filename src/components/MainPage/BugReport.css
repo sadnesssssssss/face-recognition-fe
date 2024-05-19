@@ -123,7 +123,7 @@
   cursor: pointer;
   border: none;
   padding: 1.25em;
-  background-color: #085171;
+  background-color: #000000;
   width: 31.25em;
   border-radius: 3px;
   overflow: hidden;
@@ -137,7 +137,7 @@
   max-width: 100%;
 }
 .send-report-button:hover {
-  background-color: #2e7896;
+  background-color: #232323;
 }
 .send-report-div {
   align-self: stretch;

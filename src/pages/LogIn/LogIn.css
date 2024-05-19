@@ -70,7 +70,7 @@
 }
 
 .sign-up-wrapper {
-    gap:0;
+    gap: 0;
     width: 560px;
     display: flex;
     flex-direction: row;

@@ -9,7 +9,7 @@ const LogInForm = () => {
 
 
     const [cookies, setCookie] = useCookies(["token"])
-    const navigator=useNavigate();
+    const navigate=useNavigate();
     const onButtonClick = () => {
         // axios.get(apiUrl, {
         //     responseType: "json"
@@ -17,6 +17,7 @@ const LogInForm = () => {
         //     const allPersons = resp.data;
         //     console.log(allPersons);
         // });
+        navigate("/profile");
     };
 
     interface IJWTPayload {
@@ -45,7 +46,7 @@ const LogInForm = () => {
         }).then((res) => {
             console.log(res);
             setCookie("token", res.data.token);
-            navigator("../profile");
+            navigate("../profile");
         })
 
     };

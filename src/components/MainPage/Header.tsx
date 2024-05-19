@@ -1,9 +1,10 @@
 import { FunctionComponent } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header: FunctionComponent = () => {
 
+  const navigate = useNavigate();
   const onFAQTextClick = () => {
     const anchor = document.querySelector("[data-scroll-to='faqContainer']");
     if (anchor) {
@@ -20,6 +21,10 @@ const Header: FunctionComponent = () => {
     }
   };
 
+  const handleLogoClick = () => {
+    navigate('/');
+  }
+
   const onSubscriptionsTextClick = () => {
     const anchor = document.querySelector(
       "[data-scroll-to='subscriptionsContainer']"
@@ -32,7 +37,7 @@ const Header: FunctionComponent = () => {
   return (
     <header className="header">
       <div className="background" />
-      <div className="logo-wrapper">
+      <div className="logo-wrapper" onClick={handleLogoClick}>
         <div className="logo">
           <div className="logo-1-parent">
             <img
@@ -41,7 +46,7 @@ const Header: FunctionComponent = () => {
               alt=""
               src="/icons/logo.ico"
             />
-            <div className="error-handler">
+            <div className="project-name">
               <b className="identityx">IdentityX</b>
             </div>
           </div>
@@ -63,7 +68,6 @@ const Header: FunctionComponent = () => {
         </Link>
         </b>
         <div className="rectangle-parent">
-          <div className="frame-child button-link" />
           <b className="subscriptions button-link" onClick={onSubscriptionsTextClick}>
             Subscriptions
           </b>

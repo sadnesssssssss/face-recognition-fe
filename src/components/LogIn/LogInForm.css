@@ -26,9 +26,9 @@
 }
 
 .username {
-    width: 100%;
+    width: 90%;
     border: 1px solid #000;
-    padding: 20px 0 20px 10px;
+    padding: 20px 5% 20px 5%;
     border-radius: 10px;
     font-family: "Titillium Web", serif;
     font-size: 22px;
@@ -63,9 +63,9 @@
 }
 
 .password {
-    width: 100%;
+    width: 90%;
     border: 1px solid #000;
-    padding: 20px 0 20px 10px;
+    padding: 20px 5% 20px 5%;
     border-radius: 10px;
     font-family: "Titillium Web", serif;
     font-size: 22px;
@@ -138,10 +138,11 @@
 }
 
 .button {
+    width:100%;
     cursor: pointer;
     border: none;
     padding: 21px 20px;
-    background-color: #4285F4;
+    background-color: #000000;
     flex: 1;
     border-radius: 3px;
     overflow: hidden;
@@ -155,7 +156,7 @@
 }
 
 .button:hover {
-    background-color: #2e7896;
+    background-color: #232323;
 }
 
 .button-wrapper {
@@ -202,4 +203,34 @@
     align-items:center;
     justify-items: center;
     justify-content: center;
+}
+
+.needed-action{
+    align-self:center;
+}
+
+.fade-in {
+    animation: fadein 1s forwards;
+}
+
+.fade-out {
+    animation: fadeout 1s forwards;
+}
+
+@keyframes fadeout {
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
