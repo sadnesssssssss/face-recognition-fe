@@ -8,7 +8,7 @@ import {useCookies} from "react-cookie"
 const LogInForm = () => {
 
 
-    const [cookies, setCookie] = useCookies(["token"])
+    const [cookie, setCookie] = useCookies(["token"])
     const navigate=useNavigate();
     const onButtonClick = () => {
         // axios.get(apiUrl, {
@@ -46,6 +46,7 @@ const LogInForm = () => {
         }).then((res) => {
             console.log(res);
             setCookie("token", res.data.token);
+            console.log(cookie.token)
             navigate("../profile");
         })
 
