@@ -4,20 +4,23 @@ import {jwtDecode} from 'jwt-decode'
 import "./LogInForm.css";
 import {useNavigate} from "react-router-dom";
 import {useCookies} from "react-cookie"
+import {useEffect, useState} from "react";
 
 const LogInForm = () => {
 
-
-    const [cookie, setCookie] = useCookies(["token"])
     const navigate=useNavigate();
+    const [mail, setMail] = useState("");
+    const [password, setPassword] = useState("");
+    const [cookie, setCookie] = useCookies(["token"])
+
     const onButtonClick = () => {
-        // axios.get(apiUrl, {
-        //     responseType: "json"
-        // }).then((resp: any) => {
-        //     const allPersons = resp.data;
-        //     console.log(allPersons);
-        // });
-        navigate("/profile");
+        axios.post("http://localhost:8000/api/user/token/", {
+            "password": password,
+            "email": mail,
+        }).then((res) => {
+            setCookie("token", res.data.token);
+            navigate("/profile");
+        })
     };
 
     interface IJWTPayload {
@@ -26,6 +29,12 @@ const LogInForm = () => {
         picture: string
     }
 
+    useEffect(() => {
+        if(cookie.token){
+            navigate("/profile");
+            console.log(cookie.token)
+        }
+    });
 
 
     const handleGoogleAuth = (response: any) => {
@@ -47,7 +56,7 @@ const LogInForm = () => {
             console.log(res);
             setCookie("token", res.data.token);
             console.log(cookie.token)
-            navigate("../profile");
+            navigate("/profile");
         })
 
     };
@@ -60,11 +69,8 @@ const LogInForm = () => {
             <div className="heading-1-sign-in-wrapper">
                 <div className="heading-1">Sign In</div>
             </div>
-            <input className="username" placeholder="Username" type="text"/>
-            <input className="password" placeholder="Password" type="text"/>
-        </div>
-        <div className="checkboxes2-deselected1-en-parent">
-            <label><input className="remember-checkbox" type="checkbox"></input>Remember me</label>
+            <input className="username" placeholder="E-mail" onChange={(e) => (setMail(e.target.value))} type="text"/>
+            <input className="password" placeholder="Password" onChange={(e) => (setPassword(e.target.value))} type="password"/>
         </div>
         <div className="button-wrapper">
             <button className="button" onClick={onButtonClick}>

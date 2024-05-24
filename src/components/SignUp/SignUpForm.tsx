@@ -4,28 +4,34 @@ import "../LogIn/LogInForm.css";
 
 const LogInForm = () => {
 
-    const instrs = ["Enter your E-mail:", "Enter Your password:", "Enter verification code:"]
-    const placeholders = ["E-mail", "Password", "Verification code"]
+    const instrs = ["Enter your E-mail:", "Enter your password:", "Enter your name"]
+    const placeholders = ["E-mail", "Password", "Name"]
     const navigate = useNavigate();
     const [step, setStep] = useState(1);
     const [fadeIn, setFadeIn] = useState(false);
     const [fadeOut, setFadeOut] = useState(false);
-    const [placeholder, setPlaceholder] = useState("E-mail")
-    const [instr, setInstr] = useState("Enter your E-mail:")
+    const [placeholder, setPlaceholder] = useState("E-mail");
+    const [instr, setInstr] = useState("Enter your E-mail:");
+    let data: string[] = [];
+    const [currInput, setInput] = useState("")
 
 
     const onButtonClick = () => {
+        data = [...data, currInput];
         setFadeOut(false);
         if (step === 3) {
+            console.log(data);
             navigate("../profile");
             return;
         }
         setFadeIn(true);
         setTimeout(() => {
+            setInput("")
             let newSteps = step + 1;
             setStep(newSteps);
             setInstr(instrs[step]);
-            setPlaceholder(placeholders[step])
+            setPlaceholder(placeholders[step]);
+            setInput("");
         }, 500)
         setTimeout(() => {
             setFadeOut(true);
@@ -42,7 +48,9 @@ const LogInForm = () => {
                 <div className="heading-1">Sign Up ({step} / 3)</div>
             </div>
             <div className="needed-action">{instr}</div>
-            <input className="password" placeholder={placeholder}/>
+            <input value={currInput} className="password" onChange={(e) => {
+                setInput(e.target.value)
+            }} placeholder={placeholder}/>
             <div className="button-wrapper">
                 <button className="button" onClick={() => onButtonClick()}>
                     <b className="log-in"> &gt;&gt; </b>

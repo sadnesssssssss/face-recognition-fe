@@ -1,11 +1,23 @@
-import { FunctionComponent } from "react";
+import {FunctionComponent, useEffect} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
+import Subscriptions from "./Subscriptions";
+import {useCookies} from "react-cookie";
 
 const Header: FunctionComponent = () => {
-
+  const [cookie, setCookie] = useCookies(["token"]);
+  
+  let rightText = "";
+  if (document.location.pathname === "/"){
+    rightText = "Subscriptions";
+  }
+  if (document.location.pathname === "/profile")
+    rightText = "Log out";
   const navigate = useNavigate();
   const onFAQTextClick = () => {
+    if (window.location.pathname !== "/") {
+      navigate('/');
+    }
     const anchor = document.querySelector("[data-scroll-to='faqContainer']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -21,11 +33,17 @@ const Header: FunctionComponent = () => {
     }
   };
 
+
+
   const handleLogoClick = () => {
     navigate('/');
   }
 
-  const onSubscriptionsTextClick = () => {
+  const onRightTextClick = () => {
+    if (document.location.pathname === "/profile"){
+      setCookie("token", "");
+      navigate("/");
+    }
     const anchor = document.querySelector(
       "[data-scroll-to='subscriptionsContainer']"
     );
@@ -68,8 +86,8 @@ const Header: FunctionComponent = () => {
         </Link>
         </b>
         <div className="rectangle-parent">
-          <b className="subscriptions button-link" onClick={onSubscriptionsTextClick}>
-            Subscriptions
+          <b className="subscriptions button-link" onClick={onRightTextClick}>
+            {rightText}
           </b>
         </div>
       </div>

@@ -1,10 +1,11 @@
-
 import {Link, useNavigate} from "react-router-dom";
 import LogInForm from "../../components/LogIn/LogInForm";
 import "./LogIn.css";
 
 const LogIn = () => {
         const navigate = useNavigate();
+
+
         const onMainMenuContainerClick = () => {
             navigate("/");
         };

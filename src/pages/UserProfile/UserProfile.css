@@ -9,20 +9,28 @@
     padding-right:10%;
     font-size:24px;
     max-height: 300px;
-    height:300px;
 }
 
 .user-image-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width:25%;
-    height:300px;
+    height:50vh;
+}
+
+.user-image{
+    width:100%;
 }
 
 .user-info{
+    padding-top:5vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     width:25%;
     justify-content: space-between;
-    height:300px;
+    height:40vh;
 }
 
 .copy-key{
@@ -37,6 +45,7 @@
     background-color:#000;
     border-radius: 7px;
     box-shadow: 0 3px 5px#4b4b4b;
+    width:100%;
 }
 
 .user-profile-button:hover{
@@ -45,11 +54,13 @@
 
 
 .user-sub-data{
+    padding-top:5vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     width:25%;
     justify-content: space-between;
-    height:300px;
+    height:40vh;
 }
 
 .user-info-name{
