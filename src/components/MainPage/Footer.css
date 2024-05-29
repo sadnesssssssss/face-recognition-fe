@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .about-team {
   height: 1.25em;
@@ -32,6 +33,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .check-key {
   height: 1.25em;
@@ -43,6 +45,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .follow-us {
   position: relative;
@@ -59,6 +62,11 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0em 0.25em 0em 0.063em;
+}
+.icon {
+  height: 2.5em;
+  padding-right: 0.5em;
+  cursor: pointer;
 }
 .follow-us-parent {
   display: flex;
