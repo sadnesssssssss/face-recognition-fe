@@ -31,7 +31,7 @@ const UserProfile = () => {
   }, [cookies.token]);
 
   useEffect(() => {
-    if (!cookies.token){
+    if (!cookies.token) {
       navigate("/login");
       return;
     }

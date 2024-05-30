@@ -9,6 +9,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import LogIn from "./pages/LogIn/LogIn"
 import SignUp from "./pages/SignUp/SignUp"
 import UserProfile from "./pages/UserProfile/UserProfile";
+import BuySub from "./pages/BuySub/BuySub"
 
 function App() {
   const action = useNavigationType();
@@ -52,6 +53,7 @@ function App() {
         <Route path="/login" element={<LogIn/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/profile" element={<UserProfile/>}/>
+        <Route path="/buy" element={<BuySub/>}/>
       </Routes>
   );
 }

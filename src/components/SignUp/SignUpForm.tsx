@@ -1,6 +1,7 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useNavigate} from 'react-router-dom';
 import "../LogIn/LogInForm.css";
+import {useCookies} from "react-cookie";
 
 const LogInForm = () => {
 
@@ -14,6 +15,13 @@ const LogInForm = () => {
     const [instr, setInstr] = useState("Enter your E-mail:");
     let data: string[] = [];
     const [currInput, setInput] = useState("")
+    const [cookies, setCookies] = useCookies(["token"])
+
+    useEffect(() => {
+        if (cookies){
+            navigate("/profile")
+        }
+    }, []);
 
 
     const onButtonClick = () => {

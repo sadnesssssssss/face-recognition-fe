@@ -46,19 +46,18 @@ const LogInForm = () => {
         axios.post("http://localhost:8000/api/user/googlecreate/", {
             "name": credential.name,
             "email": credential.email,
-        }).then((res) => {
-            console.log(res);
+            "picture_url": credential.picture
+        }).then(() => {
+            axios.post("http://localhost:8000/api/user/googletoken/", {
+                "name": credential.name,
+                "email": credential.email,
+            }).then((res) => {
+                console.log(res);
+                setCookie("token", res.data.token);
+                console.log(cookie.token)
+                navigate("/profile");
+            })
         })
-        axios.post("http://localhost:8000/api/user/googletoken/", {
-            "name": credential.name,
-            "email": credential.email,
-        }).then((res) => {
-            console.log(res);
-            setCookie("token", res.data.token);
-            console.log(cookie.token)
-            navigate("/profile");
-        })
-
     };
     const errorMessage = () => {
         console.log("error");
