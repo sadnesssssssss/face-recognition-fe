@@ -7,7 +7,7 @@ import {format} from "date-fns"
 import {useNavigate} from "react-router-dom";
 
 const UserProfile = () => {
-  const src = "";
+  const src = "https://drive.usercontent.google.com/download?id=1o0xvontoBo0KqRWySLbzBg-xg4ySmLnA&export=download&authuser=0";
   const navigate = useNavigate();
   const [cookies] = useCookies(["token"]);
   const [user, setUser] = useState({name: "", email: ""});
@@ -52,7 +52,7 @@ const UserProfile = () => {
             <p className="subscription-state">Valid until: <b>{subscription.valid_until}</b></p>
             <button className="user-profile-button">Manage subscription</button>
           </div>
-          <div className="download-button"><a href="https://drive.usercontent.google.com/download?id=1o0xvontoBo0KqRWySLbzBg-xg4ySmLnA&export=download&authuser=0"><button className="user-profile-button" onClick={() => navigate(src)}>Download App</button></a></div>
+          <div className="download-button"><a href={src}><button className="user-profile-button">Download App</button></a></div>
         </div>
       </div>
   );
