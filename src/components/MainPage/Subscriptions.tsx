@@ -1,4 +1,3 @@
-import {useCallback} from "react";
 import "./Subscriptions.css";
 import {Link} from "react-router-dom";
 
@@ -17,7 +16,7 @@ const Subscriptions = () => {
             <div className="subscription-buttons">
                 <div className="subscription left-button">
                     <p className="sub-name"><b>Trial</b></p>
-                    <p className="sub-price">Free for <b>1 Week</b> for New users</p>
+                    <p className="sub-price">Free for <b>1 Week</b></p>
                     <Link to="/signup" className="link-text"><p className="select-button">Sign Up</p></Link>
                 </div>
                 <div className="subscription middle-button">

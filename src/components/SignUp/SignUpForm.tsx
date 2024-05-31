@@ -6,27 +6,17 @@ import {useCookies} from "react-cookie";
 
 const LogInForm = () => {
 
-    const instrs = ["Enter your E-mail:", "Enter your password:", "Enter your name"]
-    const placeholders = ["E-mail", "Password", "Name"];
-    const ids = ["mail", "password", "name"];
     const navigate = useNavigate();
-    const [step, setStep] = useState(1);
-    const [fadeIn, setFadeIn] = useState(false);
-    const [fadeOut, setFadeOut] = useState(false);
-    const [placeholder, setPlaceholder] = useState("E-mail");
-    const [instr, setInstr] = useState("Enter your E-mail:");
     const [mail, setMail] = useState("")
     const [name, setName] = useState("")
     const [password, setPassword] = useState("")
-    let input = {"mail": "", "password": "", "name": ""};
-    const [currInput, setInput] = useState("")
     const [cookies, setCookies] = useCookies(["token"])
 
     useEffect(() => {
         if (cookies.token) {
             navigate("/profile")
         }
-    }, []);
+    }, [cookies.token, navigate]);
 
 
     const onButtonClick = () => {
