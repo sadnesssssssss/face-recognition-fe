@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .about-team {
   height: 1.25em;
@@ -32,6 +33,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .check-key {
   height: 1.25em;
@@ -43,6 +45,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .follow-us {
   position: relative;
@@ -59,6 +62,11 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0em 0.25em 0em 0.063em;
+}
+.icon {
+  height: 2.5em;
+  padding-right: 0.5em;
+  cursor: pointer;
 }
 .follow-us-parent {
   display: flex;
@@ -95,57 +103,4 @@
   text-align: center;
   color: #000;
   font-family: "Titillium Web";
-}
-
-@media screen and (max-width: 1425px) {
-  .footer {
-    padding-left: 2.188em;
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .reviews-parent {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 825px) {
-  .reviews {
-    font-size: 2.375em;
-    line-height: 0.711em;
-  }
-
-  .about-team {
-    font-size: 2.375em;
-    line-height: 0.711em;
-  }
-
-  .check-key {
-    font-size: 2.375em;
-    line-height: 0.711em;
-  }
-
-  .follow-us {
-    font-size: 2.375em;
-  }
-}
-@media screen and (max-width: 450px) {
-  .reviews {
-    font-size: 1.813em;
-    line-height: 0.69em;
-  }
-
-  .about-team {
-    font-size: 1.813em;
-    line-height: 0.69em;
-  }
-
-  .check-key {
-    font-size: 1.813em;
-    line-height: 0.69em;
-  }
-
-  .follow-us {
-    font-size: 1.813em;
-  }
 }

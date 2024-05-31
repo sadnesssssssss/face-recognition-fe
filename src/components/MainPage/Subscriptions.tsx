@@ -3,18 +3,6 @@ import "./Subscriptions.css";
 import {Link} from "react-router-dom";
 
 const Subscriptions = () => {
-    const onDataSinkClick = useCallback(() => {
-        // Please sync "BuySub" to the project
-    }, []);
-
-    const onRectangleClick = useCallback(() => {
-        // Please sync "BuySub" to the project
-    }, []);
-
-    const onRectangle2Click = useCallback(() => {
-        // Please sync "BuySub" to the project
-    }, []);
-
     return (
         <div className="subscriptions1" data-scroll-to="subscriptionsContainer">
             <div className="wrapper-background">
@@ -29,8 +17,8 @@ const Subscriptions = () => {
             <div className="subscription-buttons">
                 <div className="subscription left-button">
                     <p className="sub-name"><b>Trial</b></p>
-                    <p className="sub-price">Free for <b>1 Week</b></p>
-                    <Link to="/buy" className="link-text"><p className="select-button">Select Plan</p></Link>
+                    <p className="sub-price">Free for <b>1 Week</b> for New users</p>
+                    <Link to="/signup" className="link-text"><p className="select-button">Sign Up</p></Link>
                 </div>
                 <div className="subscription middle-button">
                     <p className="best-deal">Best Deal</p>

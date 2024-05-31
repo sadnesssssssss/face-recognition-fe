@@ -1,58 +1,69 @@
-import {FunctionComponent, memo, useCallback, useState} from "react";
+import {useEffect, useState} from "react";
 import {useNavigate} from 'react-router-dom';
-import "../SignUp/SignUpForm.css";
+import "../LogIn/LogInForm.css";
+import axios from "axios";
+import {useCookies} from "react-cookie";
 
 const LogInForm = () => {
 
-    const instrs = ["Enter your E-mail:", "Enter Your password:", "Enter verification code:"]
-    const placeholders = ["E-mail", "Password", "Verification code"]
+    const instrs = ["Enter your E-mail:", "Enter your password:", "Enter your name"]
+    const placeholders = ["E-mail", "Password", "Name"];
+    const ids = ["mail", "password", "name"];
     const navigate = useNavigate();
     const [step, setStep] = useState(1);
     const [fadeIn, setFadeIn] = useState(false);
     const [fadeOut, setFadeOut] = useState(false);
-    const [placeholder, setPlaceholder] = useState("E-mail")
-    const [instr, setInstr] = useState("Enter your E-mail:")
-    const [errorText, setErrorText] = useState("")
+    const [placeholder, setPlaceholder] = useState("E-mail");
+    const [instr, setInstr] = useState("Enter your E-mail:");
+    const [mail, setMail] = useState("")
+    const [name, setName] = useState("")
+    const [password, setPassword] = useState("")
+    let input = {"mail": "", "password": "", "name": ""};
+    const [currInput, setInput] = useState("")
+    const [cookies, setCookies] = useCookies(["token"])
 
+    useEffect(() => {
+        if (cookies.token) {
+            navigate("/profile")
+        }
+    }, []);
 
 
     const onButtonClick = () => {
-        setFadeOut(false);
-        if (step == 3) {
-            navigate("../profile");
-            return;
-        }
-        setFadeIn(true);
-        setTimeout(() => {
-            let newSteps = step + 1;
-            setStep(newSteps);
-            setInstr(instrs[step]);
-            setPlaceholder(placeholders[step])
-        }, 500)
-        setTimeout(() => {
-            setFadeOut(true);
-            setFadeIn(false);
-        }, 1000);
-        setTimeout(() => {
-            setFadeOut(false);
-        }, 1000)
+        axios.post("http://localhost:8000/api/user/create/", {
+            name: name, password: password, email: mail,
+        }).then(() => {
+            axios.post("http://localhost:8000/api/user/token/", {
+                email:mail, password:password
+            }).then((res) => {
+                setCookies("token", res.data.token)
+                navigate("/profile")
+            })
+        })
     };
 
     return (<div className="form">
-            <div className={`frame-div ${fadeIn ? 'fade-in' : ''} ${fadeOut ? 'fade-out' : ''}\ `}>
-                <div className="heading-1-sign-in-wrapper">
-                    <div className="heading-1">Sign Up ({step} / 3)</div>
-                </div>
-                <div className="needed-action">{instr}</div>
-                <input className="password" placeholder={placeholder}/>
-                {errorText != ""? <p className="error">{errorText}</p> : ""}
-                <div className="button-wrapper">
-                    <button className="button" onClick={() => onButtonClick()}>
-                        <b className="log-in"> &gt;&gt; </b>
-                    </button>
-                </div>
+        <div className={`frame-div`}>
+            <div className="heading-1-sign-in-wrapper">
+                <div className="heading-1">Sign Up</div>
             </div>
-        </div>);
+            <div className="needed-action">Enter all needed data</div>
+            <input className="password" onChange={(e) => {
+                setName(e.target.value)
+            }} placeholder="Name"/>
+            <input className="password" onChange={(e) => {
+                setMail(e.target.value)
+            }} placeholder="E-mail" type="email"/>
+            <input className="password" onChange={(e) => {
+                setPassword(e.target.value)
+            }} placeholder="Password" type="password"/>
+            <div className="button-wrapper">
+                <button className="button" onClick={() => onButtonClick()}>
+                    <b className="log-in"> &gt;&gt; </b>
+                </button>
+            </div>
+        </div>
+    </div>);
 };
 
 export default LogInForm;

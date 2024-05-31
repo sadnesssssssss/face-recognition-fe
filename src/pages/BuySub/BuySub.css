@@ -1,0 +1,112 @@
+.page-content{
+    font-family: "Titillium Web", serif;
+    background-color: #F9FCFC;
+}
+
+.nth-step{
+    width:80%;
+    padding-top:5%;
+    padding-left:15%;
+}
+
+
+.row{
+    display: flex;
+    width:100%;
+}
+
+.step-number{
+    width:min-content;
+    padding:10px 25px 30px 25px;
+    border-radius: 50%;
+    height:30px;
+    font-size:32px;
+    background-color:#000;
+    color:#fff;
+}
+
+.step-desc{
+    font-size:24px;
+    padding:24px;
+    font-weight: 600;
+}
+
+.sub-select{
+    margin-left:10%;
+    text-align: center;
+}
+
+.price{
+    font-size:40px;
+    margin:0;
+}
+
+.sub{
+    border:1px solid #000;
+    border-radius: 40px;
+    width:40%;
+    height:25vh;
+    padding-bottom:50px;
+    margin-bottom: 30px;
+}
+
+.select{
+    margin-top:5%;
+    font-family: "Titillium Web", serif;
+    border: 2px solid #000;
+    border-radius: 30px;;
+    margin-left:10%;
+    width:80%;
+    text-decoration: none;
+    font-size:24px;
+    color:#000;
+    cursor: pointer;
+}
+
+.select:hover {
+    color:#fff;
+    background-color:#000000;
+}
+
+.subscription-name{
+    font-size:32px;
+    width:100%;
+    text-align: center;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.user-mail{
+    width: 600px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding:10px;
+    outline: none;
+    font-family: "Titillium Web", serif;
+    font-size: 1.375em;
+    background-color: transparent;
+    position: relative;
+    color: #555;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.get-to-payment {
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    background-color: #000000;
+    width:400px;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.get-to-payment:hover {
+    background-color: #232323;
+}

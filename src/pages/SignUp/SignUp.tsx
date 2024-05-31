@@ -8,10 +8,6 @@ const SignUp = () => {
         navigate("/");
     }, [navigate]);
 
-    const onSignUpContainerClick = useCallback(() => {
-        // Please sync "Auth 1" to the project
-    }, []);
-
     return (<div className="registration">
             <div className="mainmenu-wrapper">
                 <div className="mainmenu" onClick={onMainMenuContainerClick}>

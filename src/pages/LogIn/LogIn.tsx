@@ -1,17 +1,14 @@
-import {useCallback} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import LogInForm from "../../components/LogIn/LogInForm";
 import "./LogIn.css";
 
 const LogIn = () => {
         const navigate = useNavigate();
-        const onMainMenuContainerClick = useCallback(() => {
-            navigate("/");
-        }, [navigate]);
 
-        const onSignUpContainerClick = useCallback(() => {
-            // Please sync "Auth 1" to the project
-        }, []);
+
+        const onMainMenuContainerClick = () => {
+            navigate("/");
+        };
 
         return (
             <div className="registration">
@@ -30,9 +27,9 @@ const LogIn = () => {
                 </div>
                 <LogInForm/>
                 <div className="sign-up-wrapper">
-                    <div className="sign-up" onClick={onSignUpContainerClick}>
+                    <div className="sign-up">
                         <div className="sign-up-question">Don't have an account? &nbsp;</div>
-                        <Link to="../signup" className="signup">
+                        <Link to="/signup" className="signup">
                             <div className="signup">Sign up</div>
                         </Link>
                     </div>
