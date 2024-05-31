@@ -7,7 +7,6 @@ import React, {useState} from "react";
 const BuySub = () => {
 
     const [texts, setTexts] = useState(["✔", "Select Plan"])
-    const [sel, setSel] = useState(0)
     const [mail, setMail] = useState("")
 
 

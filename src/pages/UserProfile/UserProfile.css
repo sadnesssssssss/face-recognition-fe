@@ -42,11 +42,13 @@
 }
 
 .user-profile-button{
+    vertical-align: middle;
     color:#fff;
     background-color:#000;
     border-radius: 7px;
     box-shadow: 0 3px 5px#4b4b4b;
     width:100%;
+    cursor: pointer;
 }
 
 .user-profile-button:hover{
@@ -66,4 +68,8 @@
 
 .user-info-name{
     font-size:36px;
+}
+
+.download-button{
+    padding-top:150px;
 }

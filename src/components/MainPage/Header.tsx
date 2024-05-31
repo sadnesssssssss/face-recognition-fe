@@ -1,10 +1,10 @@
-import {FunctionComponent, useEffect} from "react";
+import {FunctionComponent} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import {useCookies} from "react-cookie";
 
 const Header: FunctionComponent = () => {
-  const [cookies, setCookies, removeCookies] = useCookies(["token"])
+  const [, , removeCookies] = useCookies(["token"])
 
   let rightText = "";
   if (document.location.pathname === "/profile")
@@ -16,7 +16,7 @@ const Header: FunctionComponent = () => {
   const navigate = useNavigate();
 
   const onTryItClick = () => {
-    if (window.location.pathname != "/"){
+    if (window.location.pathname !== "/"){
       navigate("/buy")
     }
 
@@ -38,7 +38,7 @@ const Header: FunctionComponent = () => {
   };
 
   const onSupportTextClick = () => {
-    if (window.location.pathname != "/"){
+    if (window.location.pathname !== "/"){
       navigate("/")
     }
 
