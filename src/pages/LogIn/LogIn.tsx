@@ -29,7 +29,7 @@ const LogIn = () => {
                 <div className="sign-up-wrapper">
                     <div className="sign-up">
                         <div className="sign-up-question">Don't have an account? &nbsp;</div>
-                        <Link to="../signup" className="signup">
+                        <Link to="/signup" className="signup">
                             <div className="signup">Sign up</div>
                         </Link>
                     </div>

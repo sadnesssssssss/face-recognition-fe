@@ -18,7 +18,7 @@ const Footer = () => {
                             <Link to="https://vk.com/art3my"><img className="icon" alt={""} src="/icons/vk.svg"/></Link>
                             <Link to="https://t.me/art33my"><img className="icon" alt={""} src="/icons/telegram.svg"/></Link>
                             <Link to="https://discord.gg/7FXefn92"><img className="icon" alt={""} src="/icons/discord.svg"/></Link>
-                            <Link to="https://github.com/sadnesssssssss/face-recognition-fe"><img className="icon" alt={""} src="/icons/github.svg"/></Link>
+                            <Link to="https://github.com/art33my"><img className="icon" alt={""} src="/icons/github.svg"/></Link>
                         </div>
                     </div>
                 </div>

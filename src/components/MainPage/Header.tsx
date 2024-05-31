@@ -1,19 +1,32 @@
 import {FunctionComponent, useEffect} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
-import Subscriptions from "./Subscriptions";
 import {useCookies} from "react-cookie";
 
 const Header: FunctionComponent = () => {
-  const [cookie, setCookie] = useCookies(["token"]);
-  
+  const [cookies, setCookies, removeCookies] = useCookies(["token"])
+
   let rightText = "";
+  if (document.location.pathname === "/profile")
+    rightText = "Log out";
   if (document.location.pathname === "/"){
     rightText = "Subscriptions";
   }
-  if (document.location.pathname === "/profile")
-    rightText = "Log out";
+
   const navigate = useNavigate();
+
+  const onTryItClick = () => {
+    if (window.location.pathname != "/"){
+      navigate("/buy")
+    }
+
+    const anchor = document.querySelector(
+        "[data-scroll-to='subscriptionsContainer']"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }
   const onFAQTextClick = () => {
     if (window.location.pathname !== "/") {
       navigate('/');
@@ -25,6 +38,10 @@ const Header: FunctionComponent = () => {
   };
 
   const onSupportTextClick = () => {
+    if (window.location.pathname != "/"){
+      navigate("/")
+    }
+
     const anchor = document.querySelector(
       "[data-scroll-to='bugReportContainer']"
     );
@@ -41,15 +58,11 @@ const Header: FunctionComponent = () => {
 
   const onRightTextClick = () => {
     if (document.location.pathname === "/profile"){
-      setCookie("token", "");
+      removeCookies("token");
       navigate("/");
+      return;
     }
-    const anchor = document.querySelector(
-      "[data-scroll-to='subscriptionsContainer']"
-    );
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
+    navigate("/buy")
   };
 
   return (
@@ -71,7 +84,7 @@ const Header: FunctionComponent = () => {
         </div>
       </div>
       <div className="buttons">
-        <b className="button-link">
+        <b className="button-link" onClick={onTryItClick}>
           Try it
         </b>
         <b className="button-link" onClick={onFAQTextClick}>
